@@ -1,0 +1,92 @@
+body{
+	height: 100dvh;
+	margin: 0;
+
+	display: grid;
+	grid-template-columns: min(90%, 500px);
+	grid-template-rows: min(90%, 600px);
+	place-content: center;
+}
+
+#container
+{
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	font-family: "SEGOE UI";
+	font-size: 20px;
+	background-color: whitesmoke;
+	border-radius: 1em;
+}
+
+#form
+{
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	background-color: #eee;
+	border-radius: 1em;
+}
+#form>label:nth-child(n+2)
+{
+	margin-top: 25px;
+}
+
+input
+{
+	max-width: calc(100% - 1em);
+	padding: 10px 1em;
+	font-size: 0.8em;
+	border: none;
+	border-radius: 1em;
+}
+input[type='number']
+{
+	width: 100px;
+}
+input[type='checkbox']
+{
+	margin: 0;
+	height: 16px; aspect-ratio: 1/1;
+}
+input[type='text']
+{
+	word-break: keep-all;
+	overflow-x: scroll;
+}
+input:focus{border: none;}
+input::-webkit-scrollbar, code::-webkit-scrollbar { display: none; }
+
+code
+{
+	width: 95%;
+	height: 200px;
+	padding: 15px 5%;
+	margin-top: 30px;
+	overflow-y: scroll;
+	word-break: break-all;
+	background-color: white;
+	border-radius: 10px;
+}
+button
+{
+	padding: 1em;
+	margin-top: 10px;
+	color: white;
+	font-size: 16px;
+	text-shadow: 0px 0px 2px black;
+	background-color: teal;
+	border: none;
+	border-radius: 1em;
+	cursor: pointer;
+}
+button:disabled
+{
+	color: lightgray;
+	background-color: grey;
+	box-shadow: 2px 2px 10px black inset;
+	cursor: auto;
+}
